@@ -12,6 +12,9 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.send('halaman pertama');
 });
+app.get('/person', (req, res) => {
+  res.send('random');
+});
 
 app.use('/', (req, res) => {
     res.send('<h1>gada isinya</h1>');
